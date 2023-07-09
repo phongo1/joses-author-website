@@ -103,8 +103,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   position: absolute;
-  left: 35%;
-  top: 33px;
+  left: 20em;
+  top: 1.4em;
   text-align: center;
   align-items: center;
   white-space: nowrap;
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 }
 .welcomeBody {
   position: absolute;
-  left: 10%;
+  left: 10em;
   top: 60px;
   width: 735px;
   height: 277px;
@@ -160,15 +160,18 @@ body::-webkit-scrollbar-thumb {
 }
 .jose {
   position: absolute;
-  right: 0%;
+  left: 55em;
   bottom: 0px;
-  width: 30%;
-  height: 400px;
+  width: 25em;
+  height: 25em;
+  max-height: fit-content;
+  flex-grow: 0;
   background-color: transparent !important;
   background-image: url('assets/Jose.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: visible;
   z-index: 99;
   
 }
@@ -176,7 +179,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   display: flex;
   flex-direction: column;
-  right: -43%;
+  left: 35em;
   top: 485px;
   width: 590px;
   height: 505px;
@@ -213,13 +216,11 @@ body::-webkit-scrollbar-thumb {
     'Liberation Sans', sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  position: absolute;
-
-  top: 179px;
+  position: relative;
+  top: 7em;
+  left: 12em;
   width: max-content;
   height: max-content;
-  text-align: center;
-  align-self: center;
   text-shadow: 0px 4px 4px #00000040;
 }
 
@@ -237,7 +238,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 80em;
+  left: 0.7em;
   top: 450px;
 }
 
@@ -269,7 +271,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: fit-content;
   height: fit-content;
-  left: 10%;
+  left: 8em;
   top: -20px;
 }
 
