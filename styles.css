@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 
 .frame1 {
   position: relative;
-  top: 14em;
+  top: 9em;
   width: 100%;
   float: right;
   height: 19em;
@@ -229,7 +229,7 @@ body::-webkit-scrollbar-thumb {
   height: fit-content;
   justify-content: center;
   gap: 2em;
-  top: 10em;
+  top: 6em;
 }
 
 .out_container {
@@ -241,7 +241,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 80em;
   left: 0.7em;
-  top: 18em;
+  top: 14em;
   margin-bottom: 2em;
 }
 
@@ -713,6 +713,7 @@ body::-webkit-scrollbar-thumb {
   top: 12%;
   align-items: center;
   gap: 125px;
+  width: 100%;
 }
 
 .postcard {
@@ -751,6 +752,7 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   align-self: center;
   left: 20px;
+  border: 1px solid black;
 }
 
 .post2_text {
@@ -773,6 +775,7 @@ body::-webkit-scrollbar-thumb {
   height: 50%;
   align-self: center;
   right: 20px;
+  border: 1px solid black;
 }
 
 .post1_text {
