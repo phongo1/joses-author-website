@@ -5,7 +5,7 @@ home_button.addEventListener("click", () => {
 
 const books_button = document.querySelector('.books')
 books_button.addEventListener("click", () => {
-    scroll({top: 770, behavior: "smooth"})
+    scroll({top: 760, behavior: "smooth"})
 });
 
 const contact_button = document.querySelector('.contact3')
