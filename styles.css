@@ -27,6 +27,38 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+p::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+ 
+p::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+}
+ 
+p::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+  outline: 1px solid black;
+  border-radius: 20px;
+}
+
+div::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+ 
+div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+}
+ 
+div::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+  outline: 1px solid black;
+  border-radius: 20px;
+}
+body {
+  overflow: auto;
+}
 .page-transition {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -104,6 +136,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   width: fit-content;
   gap: .5em;
+  overflow: auto;
 }
 .welcome {
   color: #f4eded;
@@ -124,6 +157,7 @@ body::-webkit-scrollbar-thumb {
   top: -5em;
   font-family: 'Lato', sans-serif;
   font-weight: 450;
+  overflow: auto;
 }
 
 .textBlock {
@@ -173,8 +207,9 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(10em);
   animation-duration: 400ms;
   width: 590px;
-  height: 505px;
+  height: 600px;
   align-items: center;
+  overflow-y: auto;
 }
 
 .slide_left {
@@ -499,23 +534,23 @@ body::-webkit-scrollbar-thumb {
 
 .top_page {
   position: fixed !important;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   width: 100%;
-  height: 62px;
+  height: 3.5em;
   align-items: flex-start;
   z-index: 999;
   text-underline-offset: 35%;
+  overflow-x: auto;
 
 }
 .rectangle3 {
   position: absolute;
   left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  top: 0px;
   background-color: #fffbf5;
   height: 50px;
+  width: 100%;
 }
 .contact3 {
   transform-origin: top left;
@@ -527,9 +562,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   position: absolute;
-  left: 19.8611%;
-  right: 73.4028%;
-  top: 40.3226%;
+  left: 15.25em;
+  top: 50%;
   bottom: 59.6774%;
   width: min-content;
   max-width: 100%;
@@ -558,9 +592,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   position: absolute;
-  left: 30.2083%;
-  right: 65.9028%;
-  top: 41.9355%;
+  left: 23em;
+  top: 50%;
   bottom: 58.0645%;
   width: min-content;
   max-width: 100%;
@@ -589,9 +622,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   position: absolute;
-  left: 11.3889%;
-  right: 83.6806%;
-  top: 41.9355%;
+  left: 9em;
+  top: 50%;
   bottom: 58.0645%;
   width: min-content;
   max-width: 100%;
@@ -619,9 +651,8 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   position: absolute;
-  left: 3.4028%;
-  right: 92.2917%;
-  top: 42.5484%;
+  left: 3em;
+  top: 50%;
   bottom: 56.4516%;
   width: min-content;
   max-width: 100%;
@@ -643,7 +674,7 @@ body::-webkit-scrollbar-thumb {
 
 .instagram2 {
   position: absolute;
-  right: 20px;
+  left: 74em;
   top: 10px;
   background-position: center;
   width: 32px;
@@ -676,9 +707,9 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   left: 0;
   right: 0;
-  top: 80%;
-  bottom: 0;
+  bottom: 0px;
   height: 5px;
+  width: 100%;
   background-color: #8f2b38;
   overflow: hidden;
 }
@@ -762,6 +793,7 @@ body::-webkit-scrollbar-thumb {
   align-self: center;
   right: 20px;
   width: 50%;
+  height: 60%;
   color: #000;
   font-family: "Open Sans";
   font-size: 13px;
@@ -769,6 +801,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 1.68px;
+  overflow-y: auto;
 }
 
 .post1_image {
@@ -785,6 +818,7 @@ body::-webkit-scrollbar-thumb {
   align-self: center;
   left: 20px;
   width: 50%;
+  height: 60%;
   color: #000;
   font-family: "Open Sans";
   font-size: 13px;
@@ -792,6 +826,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 1.68px;
+  overflow-y: auto;
 }
 
 .header1 {
