@@ -105,7 +105,7 @@ position: relative;
 width: 100%;
 height: 120em;
 background-color: #fffbf5;
-overflow: hidden;
+overflow: auto;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -186,18 +186,18 @@ font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   'Liberation Sans', sans-serif;
 letter-spacing: 0.245em;
 }
-.jose {
 
+.jose {
 width: 25em;
 height: 25em;
+flex-shrink: 1;
 max-height: fit-content;
-flex-grow: 0;
 background-color: transparent !important;
 background-image: url('assets/Jose.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-overflow: visible;
+overflow: hidden;
 z-index: 99;
 
 }
@@ -550,7 +550,7 @@ left: 0;
 top: 0px;
 background-color: #fffbf5;
 height: 50px;
-width: 100%;
+width: 79.3em;
 }
 .contact3 {
 transform-origin: top left;
@@ -708,8 +708,8 @@ position: absolute;
 left: 0;
 right: 0;
 bottom: 0px;
-height: 5px;
-width: 100%;
+height: 5.5px;
+width: 79.3em;
 background-color: #8f2b38;
 overflow: hidden;
 }
@@ -755,6 +755,7 @@ display: flex;
 justify-content: center;
 height: 400px;
 width: 55%;
+min-width: 25em;
 background-color: #fffbf5;
 border: 2px solid black;
 border-radius: 15px;
@@ -791,7 +792,7 @@ border: 1px solid black;
 .post2_text {
 position: absolute;
 align-self: center;
-right: 20px;
+right: 1em;
 width: 50%;
 height: 60%;
 color: #000;
