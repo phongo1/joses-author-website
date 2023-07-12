@@ -682,6 +682,22 @@ transform: scale(1.0);
 transform: scale(1.1);
 }
 
+.instagramm {
+  margin-top: .5em;
+  position: absolute;
+  right: 5em;
+  background-position: center;
+  width: 32px;
+  z-index: 99;
+  animation-duration: 200ms;
+  transition: ease-in-out 0.2s;
+  transform: scale(1.0);
+  }
+
+.instagramm:hover {
+  transform: scale(1.1);
+}
+
 .instagram3 {
 width: 32px;
 height: 32px;
