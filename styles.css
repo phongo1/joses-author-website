@@ -14,7 +14,8 @@ cursor: pointer;
 }
 
 body::-webkit-scrollbar {
-width: 11px;
+width: 8px;
+display: none;
 }
 
 body::-webkit-scrollbar-track {
@@ -44,7 +45,7 @@ border-radius: 20px;
 
 div::-webkit-scrollbar {
 width: 4px;
-height: 4px;
+height: 2px;
 }
 
 div::-webkit-scrollbar-track {
@@ -198,12 +199,13 @@ z-index: 99;
 .booksummary {
 display: flex;
 flex-direction: column;
-transform: translateX(8em);
+transform: translateX(6em);
 animation-duration: 400ms;
 width: 590px;
 height: 600px;
 align-items: center;
 overflow-y: auto;
+padding-left: 3px;
 }
 
 .slide_left {
@@ -306,11 +308,13 @@ width: 100%;
 display: flex;
 flex-direction: column;
 width: 25em;
+min-width: 15em;
 height: fit-content;
 transform: translateX(-10em);
 animation-duration: 400ms;
 align-items: center;
 gap: 1em;
+flex-shrink: 2;
 }
 
 .slide_right {
@@ -532,7 +536,8 @@ position: fixed !important;
 left: 0px;
 top: 0px;
 width: 100%;
-height: 3.5em;
+min-width: 550px;
+height: 3.3em;
 z-index: 999;
 text-underline-offset: 35%;
 overflow-x: auto;
@@ -544,21 +549,18 @@ left: 0;
 top: 0px;
 background-color: #fffbf5;
 height: 50px;
-width: 100%;
+width: 80em;
 }
 .contact3 {
 transform-origin: top left;
 color: #000;
-font-size: 18px;
+font-size: 1.1rem;
 line-height: 0;
 font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
   'Liberation Sans', sans-serif;
 letter-spacing: 0.14em;
 text-transform: uppercase;
-position: absolute;
-left: 15.25em;
-top: 50%;
-bottom: 59.6774%;
+margin-top: 1.5em;
 width: min-content;
 max-width: 100%;
 height: min-content;
@@ -577,18 +579,14 @@ text-decoration: none;
 transform: translateY(-4px);
 }
 .bLOG {
-transform-origin: top left;
 color: #000;
-font-size: 18px;
+font-size: 1.1rem;
 line-height: 0;
 font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
   'Liberation Sans', sans-serif;
 letter-spacing: 0.14em;
 text-transform: uppercase;
-position: absolute;
-left: 23em;
-top: 50%;
-bottom: 58.0645%;
+margin-top: 1.5em;
 width: min-content;
 max-width: 100%;
 height: min-content;
@@ -596,7 +594,6 @@ max-height: 100%;
 text-align: center;
 align-items: center;
 white-space: nowrap;
-flex-direction: column;
 transform: matrix(1, 0.0092, -0.0092, 1, 0, 0);
 transition: ease-in-out 0.2s;
 transform: translateY(0px);
@@ -609,13 +606,11 @@ transform: translateY(-4px);
 
 .books {
 color: #000;
-font-size: 18px;
+font-size: 1.1rem;
 line-height: 0;
 font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
   'Liberation Sans', sans-serif;
 letter-spacing: 0.14em;
-text-transform: uppercase;
-position: absolute;
 left: 9em;
 top: 50%;
 bottom: 58.0645%;
@@ -630,6 +625,8 @@ flex-direction: column;
 transition: ease-in-out 0.25s;
 transform: translateY(0px);
 text-decoration: none;
+margin-top: 1.5em;
+text-transform: uppercase;
 }
 
 .books:hover{
@@ -638,19 +635,18 @@ transform: translateY(-4px);
 
 .home {
 color: #000;
-font-size: 18px;
+font-size: 1.1rem;
 line-height: 0;
 font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
   'Liberation Sans', sans-serif;
 letter-spacing: 0.14em;
 text-transform: uppercase;
-position: absolute;
-left: 3em;
-top: 50%;
+background-color: transparent;
+margin-left: 4em;
+margin-top: 1.5em;
 bottom: 56.4516%;
 width: min-content;
 max-width: 100%;
-height: min-content;
 max-height: 100%;
 text-align: center;
 align-items: center;
@@ -665,11 +661,15 @@ transform: translateY(0);
 transform: translateY(-4px);
 }
 
+.toppageflex {
+  display: flex;
+  gap: 4em;
+  min-width: 700px;
+}
 
 .instagram2 {
-position: absolute;
-left: 74em;
-top: 10px;
+margin-top: .5em;
+margin-left: 35em;
 background-position: center;
 width: 32px;
 z-index: 99;
@@ -702,8 +702,10 @@ position: absolute;
 
 bottom: 2px;
 height: 5.5px;
-width: 100%;
+width: 80em;
+min-width: 600px;
 background-color: #8f2b38;
+z-index: 999;
 }
 
 .root2{
