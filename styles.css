@@ -549,7 +549,7 @@ left: 0;
 top: 0px;
 background-color: #fffbf5;
 height: 50px;
-width: 80em;
+width: 100%;
 }
 .contact3 {
 transform-origin: top left;
@@ -718,7 +718,7 @@ position: absolute;
 
 bottom: 2px;
 height: 5.5px;
-width: 80em;
+width: 100%;
 min-width: 600px;
 background-color: #8f2b38;
 z-index: 999;
