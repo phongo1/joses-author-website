@@ -669,8 +669,8 @@ transform: translateY(-4px);
 
 .instagram2 {
 margin-top: .5em;
-margin-left: 35em;
 background-position: center;
+margin-left: 50%;
 width: 32px;
 z-index: 99;
 animation-duration: 200ms;
